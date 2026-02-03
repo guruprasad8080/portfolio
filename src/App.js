@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Code, Briefcase, GraduationCap, Award, Mail, Phone, Github, ChevronDown, Menu, X, ExternalLink, Linkedin, Terminal, Coffee, Zap, Database, Server, GitBranch, Box, Cpu } from 'lucide-react';
+import guruPhoto from './guruPhoto.jpeg';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
@@ -364,23 +365,11 @@ export default function Portfolio() {
                     {/* Replace this div with your actual photo */}
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-900/30 to-purple-900/30">
                       {/* Placeholder - Replace src with your photo URL */}
-                      <div className="text-center">
-                        <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-6xl sm:text-7xl font-bold text-white">
-                          GP
-                        </div>
-                        <p className="text-slate-400 text-sm">Add your photo here</p>
-                        <p className="text-slate-500 text-xs mt-2">Replace the placeholder with:</p>
-                        <code className="text-xs text-cyan-400 block mt-1">
-                          &lt;img src="/Users/guruprasad/MySpace/GitHub/portfolio/src/guruPhoto.jpeg" /&gt;
-                        </code>
-                      </div>
-                      {/* Uncomment and use this when you have your photo:
-                      <img 
-                        src="/path-to-your-photo.jpg" 
-                        alt="Guruprasad" 
-                        className="w-full h-full object-cover"
-                      />
-                      */}
+                      {<img
+                        src={guruPhoto}
+                        alt="Guruprasad"
+                        className="w-full h-full object-cover rounded-full"
+                        />}
                     </div>
                     
                     {/* Code Overlay */}
@@ -389,7 +378,7 @@ export default function Portfolio() {
                         <div className="mb-1"><span className="text-purple-400">const</span> developer = {'{'}</div>
                         <div className="ml-4 mb-1">name: <span className="text-yellow-400">"Guruprasad"</span>,</div>
                         <div className="ml-4 mb-1">role: <span className="text-yellow-400">"Senior Consultant"</span>,</div>
-                        <div className="ml-4 mb-1">skills: [<span className="text-yellow-400">"Java"</span>, <span className="text-yellow-400">"Spring"</span>]</div>
+                        <div className="ml-4 mb-1">skills: [<span className="text-yellow-400">"Java"</span>, <span className="text-yellow-400">"Spring Boot"</span>]</div>
                         <div>{'}'}</div>
                       </div>
                     </div>
