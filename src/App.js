@@ -112,7 +112,7 @@ export default function Portfolio() {
       company: 'Infosys Private Limited',
       role: 'Senior Software Consultant',
       period: 'Jan 2025 - Present',
-      duration: '2 months',
+      duration: '1+ years',
       location: 'Bangalore, IN',
       highlights: [
         'Architecting HCM (Human Capital Management) solutions for Goldman Sachs with 100K+ global users',
